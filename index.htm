@@ -1,0 +1,1004 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>One RP</title>
+	<meta name="description" content="One-rp">
+
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+<header class="header is-scroll js-header">
+    <div class="wrapper header__wrapper">
+        <div class="header__left">
+            <a href="index.htm" class="header__logo">
+                <img class="header__logo-image" src="images/dist/logo.svg" alt="one-rp-logo">
+            </a>
+            <div class="header__lang js-lang">
+                <button type="button" class="header__lang-button">
+                    <span class="header__lang-txt">RU</span>
+                    <svg class="custom-icon header__lang-icon">
+                        <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-lang-arrow"></use>
+                    </svg>
+                </button>
+                <div class="header__lang-list js-lang-list">
+                    <a href="ua/index.htm" class="header__lang-item">
+                        <img class="header__lang-item-flag" src="images/dist/flag-ua.svg" alt="">
+                        UA
+                    </a>
+                    <a href="/en" class="header__lang-item">
+                        <img class="header__lang-item-flag" src="images/dist/flag-en.svg" alt="">
+                        EN
+                    </a>
+                    <a href="/en" class="header__lang-item is-disabled">
+                        <img class="header__lang-item-flag" src="circle-flags/flags/fr.svg" alt="">
+                        FR
+                    </a>
+                    <a href="/en" class="header__lang-item is-disabled">
+                        <img class="header__lang-item-flag" src="circle-flags/flags/pt.svg" alt="">
+                        PT
+                    </a>
+                    <a href="/en" class="header__lang-item is-disabled">
+                        <img class="header__lang-item-flag" src="circle-flags/flags/de.svg" alt="">
+                        DE
+                    </a>
+                    <a href="/en" class="header__lang-item is-disabled">
+                        <img class="header__lang-item-flag" src="circle-flags/flags/es.svg" alt="">
+                        ES
+                    </a>
+                    <a href="/en" class="header__lang-item is-disabled">
+                        <img class="header__lang-item-flag" src="circle-flags/flags/rs.svg" alt="">
+                        RS
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav js-nav">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a class="nav__link js-header-link" href="#hero">Главная</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link js-header-link" href="#about">О сервере</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link js-header-link" href="#steps">Начать играть</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link js-header-link is-disabled" href="">База знаний</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link js-header-link is-disabled" href="">Партнерам</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link js-header-link is-disabled" href="">Топ игроки</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link js-header-link is-disabled" href="">Форум</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link js-header-link is-disabled" href="">Донат</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__right">
+            <div class="header__social">
+                <a class="header__social-item" target="_blank" href="https://discord.gg/fBFeGjfJMv">
+                    <svg class="custom-icon header__social-icon">
+                        <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-discord"></use>
+                    </svg>
+                </a>
+                <a class="header__social-item" target="_blank" href="https://www.youtube.com/channel/UCy4uw15tN4gjwbY6XSnG-Ag">
+                    <svg class="custom-icon header__social-icon">
+                        <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-youtube"></use>
+                    </svg>
+                </a>
+                <a class="header__social-item" target="_blank" href="https://t.me/onerp">
+                    <svg class="custom-icon header__social-icon">
+                        <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-telegram"></use>
+                    </svg>
+                </a>
+            </div>
+            <!--            <a class="header__login" href="#">-->
+            <!--                <svg class="custom-icon header__login-icon">-->
+            <!--                    <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-log-in"></use>-->
+            <!--                </svg>-->
+            <!--            </a>-->
+
+            <div class="burger js-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="hero" id="hero">
+    <picture class="hero__bg-picture">
+        <source media="(max-width:991px)" srcset="images/dist/hero_mob.webp, images/dist/hero_mob%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/hero.webp, images/dist/hero%402x.webp 2x">
+        <img class="hero__bg-image" srcset="images/dist/hero%402x.webp" src="images/dist/hero.webp" alt="hero-bg" loading="lazy">
+    </picture>
+    <picture class="hero__lamp-picture--left">
+        <source media="(max-width:991px)" srcset="images/dist/lamp_left.webp, images/dist/lamp_left%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/lamp_left.webp, images/dist/lamp_left%402x.webp 2x">
+        <img class="hero__lamp-left" srcset="images/dist/lamp_left%402x.webp" src="images/dist/lamp_left.webp" alt="hero__lamp-left" width="1175" height="1739" loading="lazy">
+    </picture>
+    <picture class="hero__lamp-picture--right">
+        <source media="(max-width:991px)" srcset="images/dist/lamp_right.webp, images/dist/lamp_right%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/lamp_right.webp, images/dist/lamp_right%402x.webp 2x">
+        <img class="hero__lamp-right" srcset="images/dist/lamp_right%402x.webp" src="images/dist/lamp_right.webp" width="1440" height="2660" alt="hero__lamp-right">
+    </picture>
+    <div class="wrapper hero__wrapper">
+        <h1 class="hero__headline">
+            <span class="txt-shadow" data-txt="ИГРАЙ ПРЯМО СЕЙЧАС">ИГРАЙ ПРЯМО СЕЙЧАС</span>
+        </h1>
+        <div class="hero__slider">
+            <div class="hero__item hero__item-law">
+                <img src="images/dist/guard_logo.svg" alt="law" class="hero__item-image">
+                <img src="images/dist/law-txt.svg" alt="law" class="hero__item-svg">
+<!--                <p class="hero__item-txt">-->
+<!--                    <span class="txt-shadow" data-txt="LAW">LAW</span>-->
+<!--                </p>-->
+                <picture>
+                    <source media="(max-width:991px)" srcset="images/dist/law-bg.webp, images/dist/law-bg%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/law-bg.webp, images/dist/law-bg%402x.webp 2x">
+                    <img class="hero__item-bg" srcset="images/dist/law-bg%402x.webp" src="images/dist/law-bg.webp" width="286" height="396" alt="" loading="lazy">
+                </picture>
+            </div>
+            <div class="hero__item hero__item-civil is-active">
+                <img src="images/dist/corp_logo.svg" alt="civil" class="hero__item-image">
+                <img src="images/dist/civil-txt.svg" alt="law" class="hero__item-svg">
+<!--                <p class="hero__item-txt">-->
+<!--                    <span class="txt-shadow" data-txt="CIVIL">CIVIL</span>-->
+<!--                </p>-->
+                <picture>
+                    <source media="(max-width:991px)" srcset="images/dist/civil-bg.webp, images/dist/civil-bg%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/civil-bg.webp, images/dist/civil-bg%402x.webp 2x">
+                    <img class="hero__item-bg" srcset="images/dist/civil-bg%402x.webp" src="images/dist/civil-bg.webp" width="285" height="395" alt="" loading="lazy">
+                </picture>
+            </div>
+            <div class="hero__item hero__item-crime">
+                <img src="images/dist/crime_logo.svg" alt="civil" class="hero__item-image">
+                <img src="images/dist/crime-txt.svg" alt="law" class="hero__item-svg">
+<!--                <p class="hero__item-txt">-->
+<!--                    <span class="txt-shadow" data-txt="Crime">Crime</span>-->
+<!--                </p>-->
+                <picture>
+                    <source media="(max-width:991px)" srcset="images/dist/crime-bg.webp, images/dist/crime-bg%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/crime-bg.webp, images/dist/crime-bg%402x.webp 2x">
+                    <img class="hero__item-bg" srcset="images/dist/crime-bg%402x.webp" src="images/dist/crime-bg.webp" width="286" height="395" alt="" loading="lazy">
+                </picture>
+            </div>
+        </div>
+
+        <div class="hero__info">
+            <div class="hero__info-group">
+                <a href="#" class="hero__info--button button-cut">
+                    <svg class="custom-icon hero__info--button-icon">
+                        <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-game"></use>
+                    </svg>
+                    <span class="hero__info--button-txt">Начать игру</span>
+                </a>
+                <a href="#">
+                    <img class="hero__info-show" src="images/dist/show_btn.svg" alt="" width="178px" height="51.7px">
+                </a>
+            </div>
+            <div class="online">
+                <p>Игороков в сети:</p> <span>Coming soon</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="server" id="about">
+    <picture class="server__bg-picture">
+        <source media="(max-width:991px)" srcset="images/dist/server-bg-right.webp, images/dist/server-bg-right%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/server-bg-right.webp, images/dist/server-bg-right%402x.webp 2x">
+        <img class="server__bg-right" srcset="images/dist/server-bg-right%402x.webp" src="images/dist/server-bg-right.webp" loading="lazy" alt="hero-bg" width="953" height="1878">
+    </picture>
+    <picture class="server__bg-picture">
+        <source media="(max-width:991px)" srcset="images/dist/server-bg-left.webp, images/dist/server-bg-left%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/server-bg-left.webp, images/dist/server-bg-left%402x.webp 2x">
+        <img class="server__bg-left" srcset="images/dist/server-bg-left%402x.webp" src="images/dist/server-bg-left.webp" loading="lazy" alt="hero-bg" width="1440" height="3307">
+    </picture>
+
+    <div class="wrapper server__wrapper">
+        <div class="server__tabs js-tabs">
+            <div class="server__tabs-indicator js-tabs-indicator"></div>
+            <div class="server__tabs-item is-active">
+                <svg class="custom-icon server__tabs-icon">
+                    <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-law_icon"></use>
+                </svg>
+                <p class="server__tabs-txt">LAW</p>
+            </div>
+            <div class="server__tabs-item">
+                <svg class="custom-icon server__tabs-icon">
+                    <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-civil_icon"></use>
+                </svg>
+                <p class="server__tabs-txt">CIVIL</p>
+            </div>
+            <div class="server__tabs-item">
+                <svg class="custom-icon server__tabs-icon">
+                    <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-crime_icon"></use>
+                </svg>
+                <p class="server__tabs-txt">Crime</p>
+            </div>
+        </div>
+
+        <div class="server__info-list">
+            <img class="server__info-decor server__info-decor-left" src="images/dist/server-decor-left.svg" alt="">
+            <img class="server__info-decor server__info-decor-bottom" src="images/dist/server-decor-bottom.svg" alt="">
+
+            <div class="server__info-items">
+                <!-- LAW Section -->
+                <div class="server__info-item js-info-item">
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-cars-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Расширенные автопарк и арсенал</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-mask_icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Системные мероприятия</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-like-shapes"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Фракционная квестовая линейка</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-automation_icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">всё автоматизировано</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-camera_icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Спид-радары и камеры</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-spikes"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Перекрытия, шипы и блокпосты</p>
+                    </div>
+                </div>
+                <!-- LAW Section -->
+                <!-- CIVIL Section -->
+                <div class="server__info-item js-info-item">
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-money-bag"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Организации</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-construction"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Строительство</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-truck"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Логистика</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-box"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Производство</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-car"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Развлечения</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-cocktail"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Ночная Жизнь</p>
+                    </div>
+                </div>
+                <!-- CIVIL Section -->
+                <!-- CRIME Section -->
+                <div class="server__info-item js-info-item">
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-incognito_icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Чёрный Рынок</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-Robber"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Ограбления</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-like-shapes"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Фракционная квестовая линейка</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-flash-icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Ежедневные задачи</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-pistol_icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Рэкет, контрабанда</p>
+                    </div>
+                    <div class="server__info-point">
+                        <div class="server__info-icon-box">
+                            <svg class="custom-icon server__info-icon">
+                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-bullets_icon"></use>
+                            </svg>
+                        </div>
+                        <p class="server__info-txt">Перестрелки, гонки, захваты</p>
+                    </div>
+                </div>
+                <!-- CRIME Section -->
+            </div>
+            <div class="server__info-images">
+                <!-- LAW Section -->
+                <picture class="server__info-image js-info-image">
+                    <source media="(max-width:991px)" srcset="images/dist/info-images-law.webp, images/dist/info-images-law%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/info-images-law.webp, images/dist/info-images-law%402x.webp 2x">
+                    <img srcset="images/dist/info-images-law%402x.webp" src="images/dist/info-images-law.webp" width="550" height="550" alt="">
+                </picture>
+                <!-- LAW Section -->
+                <!-- CIVIL Section -->
+                <picture class="server__info-image js-info-image">
+                    <source media="(max-width:991px)" srcset="images/dist/info-images-civil.webp, images/dist/info-images-civil%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/info-images-civil.webp, images/dist/info-images-civil%402x.webp 2x">
+                    <img srcset="images/dist/info-images-civil%402x.webp" src="images/dist/info-images-civil.webp" width="550" height="550" alt="">
+                </picture>
+                <!-- CIVIL Section -->
+                <!-- CRIME Section -->
+                <picture class="server__info-image js-info-image">
+                    <source media="(max-width:991px)" srcset="images/dist/info-images-crime.webp, images/dist/info-images-crime%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/info-images-crime.webp, images/dist/info-images-crime%402x.webp 2x">
+                    <img srcset="images/dist/info-images-crime%402x.webp" src="images/dist/info-images-crime.webp" width="551" height="550" alt="">
+                </picture>
+                <!-- CRIME Section -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="servers" id="servers">
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/servers-decor-left.webp, images/dist/servers-decor-left%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/servers-decor-left.webp, images/dist/servers-decor-left%402x.webp 2x">
+        <img class="servers__bg-decor servers__bg-decor-left" srcset="images/dist/servers-decor-left%402x.webp" src="images/dist/servers-decor-left.webp" loading="lazy" alt="hero-bg" width="351" height="369">
+    </picture>
+
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/servers-decor-right.webp, images/dist/servers-decor-right%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/servers-decor-right.webp, images/dist/servers-decor-right%402x.webp 2x">
+        <img class="servers__bg-decor servers__bg-decor-right" srcset="images/dist/servers-decor-right%402x.webp" src="images/dist/servers-decor-right.webp" loading="lazy" alt="hero-bg" width="438" height="536">
+    </picture>
+
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/servers-decor-bottom.webp, images/dist/servers-decor-bottom%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/servers-decor-bottom.webp, images/dist/servers-decor-bottom%402x.webp 2x">
+        <img class="servers__bg-decor servers__bg-decor-bottom" srcset="images/dist/servers-decor-bottom%402x.webp" src="images/dist/servers-decor-bottom.webp" loading="lazy" alt="hero-bg" width="453" height="452">
+    </picture>
+
+    <div class="wrapper servers__wrapper">
+        <h2 class="servers__headline"><span class="txt-shadow" data-txt="Серверы">Серверы</span></h2>
+        <div class="servers__list">
+            <!--                <div class="servers__list-item">-->
+            <!--                    <div class="servers__list-info">-->
+            <!--                        <div class="servers__list-left">-->
+            <!--                            <img class="servers__list-flag" src="/images/dist/flag-ua.svg" alt="">-->
+            <!--                            <div class="servers__list-text">-->
+            <!--                                <span>Украинский</span>-->
+            <!--                                <p>kyiv.onerp.pro:22005</p>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <img class="servers__list-logo" src="/images/dist/logo.svg" alt="">-->
+            <!--                    </div>-->
+            <!--                    <div class="servers__list-online">-->
+            <!--                        <div class="servers__list-part">-->
+            <!--                            <svg class="custom-icon servers__list-part-icon">-->
+            <!--                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-game"></use>-->
+            <!--                            </svg>-->
+            <!--                            <p class="servers__list-part-txt">В сети:</p>-->
+            <!--                        </div>-->
+            <!--                        <p class="servers__list-current">1200<span>/2200</span></p>-->
+            <!--                    </div>-->
+            <!--                    <picture class="servers__list-picture">-->
+            <!--                        <source media="(max-width:991px)"-->
+            <!--                                srcset="/images/dist/server-bg-ua.webp, /images/dist/server-bg-ua@2x.webp 2x"-->
+            <!--                        >-->
+            <!--                        <source media="(min-width:992px)"-->
+            <!--                                srcset="/images/dist/server-bg-ua.webp, /images/dist/server-bg-ua@2x.webp 2x"-->
+            <!--                        >-->
+            <!--                        <img srcset="/images/dist/server-bg-ua@2x.webp"-->
+            <!--                             src="/images/dist/server-bg-ua.webp"-->
+            <!--                             width="360"-->
+            <!--                             height="179"-->
+            <!--                             class="servers__list-image"-->
+            <!--                             loading="lazy"-->
+            <!--                        >-->
+            <!--                    </picture>-->
+            <!--                </div>-->
+
+            <!--                <div class="servers__list-item">-->
+            <!--                    <div class="servers__list-info">-->
+            <!--                        <div class="servers__list-left">-->
+            <!--                            <img class="servers__list-flag" src="/images/dist/flag-en.svg" alt="">-->
+            <!--                            <div class="servers__list-text">-->
+            <!--                                <span>Английский</span>-->
+            <!--                                <p>newyork.onerp.pro:253330</p>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <img class="servers__list-logo" src="/images/dist/logo.svg" alt="">-->
+            <!--                    </div>-->
+            <!--                    <div class="servers__list-online">-->
+            <!--                        <div class="servers__list-part">-->
+            <!--                            <svg class="custom-icon servers__list-part-icon">-->
+            <!--                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-game"></use>-->
+            <!--                            </svg>-->
+            <!--                            <p class="servers__list-part-txt">В сети:</p>-->
+            <!--                        </div>-->
+            <!--                        <p class="servers__list-current">5526<span>/6000</span></p>-->
+            <!--                    </div>-->
+            <!--                    <picture class="servers__list-picture">-->
+            <!--                        <source media="(max-width:991px)"-->
+            <!--                                srcset="/images/dist/server-bg-en.webp, /images/dist/server-bg-en@2x.webp 2x"-->
+            <!--                        >-->
+            <!--                        <source media="(min-width:992px)"-->
+            <!--                                srcset="/images/dist/server-bg-en.webp, /images/dist/server-bg-en@2x.webp 2x"-->
+            <!--                        >-->
+            <!--                        <img srcset="/images/dist/server-bg-en@2x.webp"-->
+            <!--                             src="/images/dist/server-bg-en.webp"-->
+            <!--                             width="360"-->
+            <!--                             height="179"-->
+            <!--                             class="servers__list-image"-->
+            <!--                             loading="lazy"-->
+            <!--                        >-->
+            <!--                    </picture>-->
+            <!--                </div>-->
+
+            <!--                <div class="servers__list-item">-->
+            <!--                    <div class="servers__list-info">-->
+            <!--                        <div class="servers__list-left">-->
+            <!--                            <img class="servers__list-flag" src="/images/dist/flag-ua.svg" alt="">-->
+            <!--                            <div class="servers__list-text">-->
+            <!--                                <span>Украина (RU)</span>-->
+            <!--                                <p>kharkiv.onerp.pro:22005</p>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                        <img class="servers__list-logo" src="/images/dist/logo.svg" alt="">-->
+            <!--                    </div>-->
+            <!--                    <div class="servers__list-online">-->
+            <!--                        <div class="servers__list-part">-->
+            <!--                            <svg class="custom-icon servers__list-part-icon">-->
+            <!--                                <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-game"></use>-->
+            <!--                            </svg>-->
+            <!--                            <p class="servers__list-part-txt">В сети:</p>-->
+            <!--                        </div>-->
+            <!--                        <p class="servers__list-current">8000<span>/9000</span></p>-->
+            <!--                    </div>-->
+            <!--                    <picture class="servers__list-picture">-->
+            <!--                        <source media="(max-width:991px)"-->
+            <!--                                srcset="/images/dist/server-bg-ua-2.webp, /images/dist/server-bg-ua-2@2x.webp 2x"-->
+            <!--                        >-->
+            <!--                        <source media="(min-width:992px)"-->
+            <!--                                srcset="/images/dist/server-bg-ua-2.webp, /images/dist/server-bg-ua-2@2x.webp 2x"-->
+            <!--                        >-->
+            <!--                        <img srcset="/images/dist/server-bg-ua-2@2x.webp"-->
+            <!--                             src="/images/dist/server-bg-ua-2.webp"-->
+            <!--                             width="360"-->
+            <!--                             height="179"-->
+            <!--                             class="servers__list-image"-->
+            <!--                             loading="lazy"-->
+            <!--                        >-->
+            <!--                    </picture>-->
+            <!--                </div>-->
+
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-ua.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Украинский</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-ua.webp, images/dist/server-bg-ua%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-ua.webp, images/dist/server-bg-ua%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-ua%402x.webp" src="images/dist/server-bg-ua.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-en.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Английский</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-en.webp, images/dist/server-bg-en%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-en.webp, images/dist/server-bg-en%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-en%402x.webp" src="images/dist/server-bg-en.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-ua.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Украинский (RU)</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-ua-2.webp, images/dist/server-bg-ua-2%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-ua-2.webp, images/dist/server-bg-ua-2%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-ua-2%402x.webp" src="images/dist/server-bg-ua-2.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-de.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Немецкий</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-de.webp, images/dist/server-bg-de%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-de.webp, images/dist/server-bg-de%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-de%402x.webp" src="images/dist/server-bg-de.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-fr.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Французский</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-fr.webp, images/dist/server-bg-fr%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-fr.webp, images/dist/server-bg-fr%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-fr%402x.webp" src="images/dist/server-bg-fr.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-sp.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Испанский</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-sp.webp, images/dist/server-bg-sp%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-sp.webp, images/dist/server-bg-sp%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-sp%402x.webp" src="images/dist/server-bg-sp.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-pt.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Португальский</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-pt.webp, images/dist/server-bg-pt%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-pt.webp, images/dist/server-bg-pt%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-pt%402x.webp" src="images/dist/server-bg-pt.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="servers__list-item is-disabled">
+                <div class="servers__list-info">
+                    <div class="servers__list-left">
+                        <img class="servers__list-flag" src="images/dist/flag-pl.svg" alt="">
+                        <div class="servers__list-text">
+                            <span>Польский</span>
+                        </div>
+                    </div>
+                    <img class="servers__list-logo" src="images/dist/logo.svg" alt="">
+                </div>
+                <p class="servers__list-disabled-txt">Comming Soon</p>
+                <picture class="servers__list-picture">
+                    <source media="(max-width:991px)" srcset="images/dist/server-bg-pl.webp, images/dist/server-bg-pl%402x.webp 2x">
+                    <source media="(min-width:992px)" srcset="images/dist/server-bg-pl.webp, images/dist/server-bg-pl%402x.webp 2x">
+                    <img srcset="images/dist/server-bg-pl%402x.webp" src="images/dist/server-bg-pl.webp" width="360" height="179" class="servers__list-image" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="steps" id="steps">
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/steps__bg-decor.webp, images/dist/steps__bg-decor%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/steps__bg-decor.webp, images/dist/steps__bg-decor%402x.webp 2x">
+        <img class="steps__bg-decor" srcset="images/dist/steps__bg-decor%402x.webp" src="images/dist/steps__bg-decor.webp" loading="lazy" alt="hero-bg" width="427" height="536">
+    </picture>
+    <div class="wrapper steps__wrapper">
+        <h2 class="steps__headline"><span class="txt-shadow" data-txt="Как начать?">Как начать?</span></h2>
+        <p class="steps__description">Для начала мы советуем Вам <span>Зарегистрироваться на нашем сайте</span></p>
+        <p class="steps__secondary">*Или Вы можете это сделать внутри игры на странице Авторизации</p>
+        <div class="steps__list">
+            <div class="steps__item">
+                <div class="steps__item-number">
+                    <span class="step-1">
+                        Шаг 1
+                        <span class="svg-wrapper">
+                            <svg width="271" height="41" viewbox="0 0 271 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 24.7911V24.7911C18.1359 26.8895 28.6545 26.1459 38.3944 22.6423L64.5197 13.2447C82.575 6.75 102.578 8.5685 119.166 18.2127L130.865 25.0144C146.929 34.3542 167.076 32.8959 181.627 21.34V21.34C197.509 8.72839 219.735 9.04072 238.874 15.7453C248.318 19.0534 258.796 21.1173 268.5 19.5" stroke="#FFDA18" stroke-dasharray="4 3"></path>
+<rect x="1.99609" y="19.5" width="8" height="8" transform="rotate(14.4498 1.99609 19.5)" fill="#FFDA18"></rect>
+<rect x="262" y="15.895" width="8" height="8" transform="rotate(-2.83066 262 15.895)" fill="#FFDA18"></rect>
+</svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="steps__item-box">
+                    <img src="images/dist/GTA_Logo.svg" alt="" class="steps__item-icon">
+                    <p class="steps__item-txt">Купить и установить лицензионную</p>
+                    <p class="steps__item-headline">GTA 5</p>
+                    <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/" target="_blank" class="steps__item-btn"><span>Купить в Steam</span></a>
+                </div>
+            </div>
+            <div class="steps__item">
+                <div class="steps__item-number">
+                    <span class="step-2">
+                        Шаг 2
+                        <span class="svg-wrapper">
+                            <svg width="269" height="35" viewbox="0 0 269 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M259.859 18.7848L235.064 13.1203C217.867 9.19139 199.868 10.7957 183.636 17.7042L172.818 22.309C154.158 30.2509 132.781 28.4712 115.692 17.553V17.553C98.9449 6.85369 78.1721 5.42215 59.0313 10.766C22.8028 20.8804 2 18 2 18" stroke="#FFDA18" stroke-dasharray="4 3"></path>
+<rect x="266.191" y="24.1075" width="8" height="8" transform="rotate(-162.193 266.191 24.1075)" fill="#FFDA18"></rect>
+<rect x="7.97461" y="22.6138" width="8" height="8" transform="rotate(-175.416 7.97461 22.6138)" fill="#FFDA18"></rect>
+</svg>
+                        </span>
+                    </span>
+                </div>
+                <div class="steps__item-box">
+                    <img src="images/dist/R-logo.webp" alt="" class="steps__item-icon">
+                    <p class="steps__item-txt">установить и запустить Launcher</p>
+                    <p class="steps__item-headline">Rage MP</p>
+                    <a href="https://rage.mp/" target="_blank" class="steps__item-btn"><span>Rage MP MULTIPLAER</span></a>
+                </div>
+            </div>
+            <div class="steps__item">
+                <div class="steps__item-number"><span class="step-3">Шаг 3</span></div>
+                <div class="steps__item-box">
+                    <img src="images/dist/step-logo.svg" alt="" class="steps__item-icon">
+                    <p class="steps__item-txt">Выберите и скопируйте ip один из наших серверов или найдите его по названию</p>
+                    <p class="steps__item-headline"></p>
+                    <a href="#servers" class="steps__item-btn js-header-link"><span>Выбрать сервер</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="how">
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/how_lamp.webp, images/dist/how_lamp%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/how_lamp.webp, images/dist/how_lamp%402x.webp 2x">
+        <img class="how__bg-decor" srcset="images/dist/how_lamp%402x.webp" src="images/dist/how_lamp.webp" loading="lazy" alt="hero-bg" width="1440" height="3261">
+    </picture>
+    <div class="wrapper how__wrapper">
+        <h2 class="how__headline"><span class="txt-shadow" data-txt="Варианты подключения к серверу">Варианты подключения к серверу</span>
+        </h2>
+        <div class="how__section">
+            <div class="how__box">
+                <h3 class="how__box-headline">Регистрация в игре</h3>
+                <div class="how__box-list">
+                    <div class="how__box-item">
+                        <div class="how__box-number">1</div>
+                        <p class="how__box-txt">Зайдите в Rage MP</p>
+                    </div>
+                    <div class="how__box-item">
+                        <div class="how__box-number">2</div>
+                        <p class="how__box-txt">Введите один из адресов сервера</p>
+                    </div>
+                    <div class="how__box-item">
+                        <div class="how__box-number">3</div>
+                        <p class="how__box-txt">Подключитесь, скачайте файлы сервера</p>
+                    </div>
+                    <div class="how__box-item">
+                        <div class="how__box-number">4</div>
+                        <p class="how__box-txt">Зарегистрируйтесь прямо в игре и<br> начните играть</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="how__box">
+                <h3 class="how__box-headline">Регистрация на сайте</h3>
+                <div class="how__box-list">
+                    <div class="how__box-item">
+                        <div class="how__box-number">1</div>
+                        <p class="how__box-txt">Пройдите процедуру регистрации</p>
+                    </div>
+                    <div class="how__box-item">
+                        <div class="how__box-number">2</div>
+                        <p class="how__box-txt">Подключитесь к серверу по адресу и<br> скачайте файлы сервера</p>
+                    </div>
+                    <div class="how__box-item">
+                        <div class="how__box-number">3</div>
+                        <p class="how__box-txt">Авторизируйтесь, используя данные<br> при регистрации сервера</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="benefits">
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/benefits-left.webp, images/dist/benefits-left%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/benefits-left.webp, images/dist/benefits-left%402x.webp 2x">
+        <img class="benefits-left" srcset="images/dist/benefits-left%402x.webp" src="images/dist/benefits-left.webp" loading="lazy" alt="hero-bg" width="411" height="536">
+    </picture>
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/benefits-right.webp, images/dist/benefits-right%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/benefits-right.webp, images/dist/benefits-right%402x.webp 2x">
+        <img class="benefits-right" srcset="images/dist/benefits-right%402x.webp" src="images/dist/benefits-right.webp" loading="lazy" alt="hero-bg" width="409" height="536">
+    </picture>
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/benefits-lamp.webp, images/dist/benefits-lamp%402x.webp 2x">
+        <source media="(min-width:992px)" srcset="images/dist/benefits-lamp.webp, images/dist/benefits-lamp%402x.webp 2x">
+        <img class="benefits-lamp" srcset="images/dist/benefits-lamp%402x.webp" src="images/dist/benefits-lamp.webp" loading="lazy" alt="hero-bg" width="1440" height="2532">
+    </picture>
+    <div class="wrapper benefits__wrapper">
+        <h2 class="benefits__headline"><span class="txt-shadow" data-txt="Преимущества">Преимущества</span></h2>
+        <div class="benefits__list">
+            <div class="benefits__list-wrap">
+                <div class="benefits__item is-open">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Разработка с нуля</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt" style="display: block; box-sizing: border-box;">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits1.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Система обучения</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits2.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Переосмысленные работы</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits3.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Увлекательные фракции</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits4.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Меньше правил</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits5.webp" alt="" class="benefits__bg">
+                </div>
+            </div>
+            <div class="benefits__list-wrap">
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Стойкая экономика</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits6.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Расширенная квестовая линейка</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits7.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Продуманные организации</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits8.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Высококачественные автомобили
+                        </h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits9.webp" alt="" class="benefits__bg">
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__top">
+                        <h3 class="benefits__title">Разнообразие активностей</h3>
+                        <div class="benefits__button"></div>
+                    </div>
+                    <p class="benefits__txt">Сервер, разработан на платформе RAGE Multiplayer (Рейдж Мультиплеер),
+                        который дает возможность отыгрывать выбранную роль в виртуальной вселенной.</p>
+                    <img src="images/dist/benefits10.webp" alt="" class="benefits__bg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <picture>
+        <source media="(max-width:991px)" srcset="images/dist/footer-bg.png, images/dist/footer-bg%402x.png 2x">
+        <source media="(min-width:992px)" srcset="images/dist/footer-bg.png, images/dist/footer-bg%402x.png 2x">
+        <img class="footer__bg-image" srcset="images/dist/footer-bg%402x.png" src="images/dist/footer-bg.png" alt="hero-bg" loading="lazy">
+    </picture>
+    <div class="wrapper footer__wrapper">
+        <div class="footer__top">
+            <a href="index.htm" class="footer__logo">
+                <img class="footer__logo-image" src="images/dist/logo.svg" alt="one-rp-logo">
+            </a>
+            <div class="footer__links">
+<!--                <div class="footer__nav">-->
+<!--                    <a class="footer__nav-item" href="#">User agreement</a>-->
+<!--                    <a class="footer__nav-item" href="#">Privacy policy</a>-->
+<!--                    <a class="footer__nav-item" href="#">Cookie policy</a>-->
+<!--                </div>-->
+                <div class="footer__social">
+                    <a class="footer__social-item" target="_blank" href="https://discord.gg/fBFeGjfJMv">
+                        <svg class="custom-icon footer__social-icon">
+                            <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-discord"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-item" target="_blank" href="https://www.youtube.com/channel/UCy4uw15tN4gjwbY6XSnG-Ag">
+                        <svg class="custom-icon footer__social-icon">
+                            <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-youtube"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-item" target="_blank" href="https://t.me/onerp">
+                        <svg class="custom-icon footer__social-icon">
+                            <use xlink:href="/images/dist/svg/symbols.svg?v=v2#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__online">
+                    <p>Игороков в сети:</p> <span>Coming soon</span>
+                </div>
+            </div>
+            <div class="footer__contact">
+                <p>Поддержка сервера:</p>
+                <a class="footer__contact-item" href="mailto:support@one5rp.com">support@one5rp.com</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copy">© 2022 - 2024 One RP. All rights reserved</p>
+            <p class="footer__ur">Юридическая информация: ONE RP Майами Гарденс, Флорида 33055, США</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
